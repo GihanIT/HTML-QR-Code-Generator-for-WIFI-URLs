@@ -13,7 +13,8 @@ A simple, lightweight web application that generates QR codes for URLs and Wi-Fi
 
 ## Screenshots
 
-![QR Code Generator Interface](screenshots/interface.png)  
+![QR Code Generator Interface 1](screenshots/WIFI.png)
+![QR Code Generator Interface 2](screenshots/URL.png)  
 *Generate a QR code for a URL or Wi-Fi network and download it!*
 
 ## Prerequisites
