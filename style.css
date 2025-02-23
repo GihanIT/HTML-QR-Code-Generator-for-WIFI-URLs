@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+.container {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h1 {
+    margin-bottom: 20px;
+}
+label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+select, input {
+    padding: 10px;
+    width: 200px;
+    margin: 10px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.input-group {
+    margin: 15px 0;
+}
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+button:hover {
+    background-color: #0056b3;
+}
+#qr-code {
+    margin-top: 20px;
+}
+#download-btn {
+    display: none; /* Hidden by default, controlled by JS */
+    margin-left: auto;
+    margin-right: auto;
+    display: block; /* Overrides inline style when shown */
+}

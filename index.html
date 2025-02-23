@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>QR Code Generator</h1>
+        <label for="type">Select QR Type:</label>
+        <select id="type" onchange="toggleInputs()">
+            <option value="url">URL</option>
+            <option value="wifi">Wi-Fi</option>
+        </select>
+
+        <!-- URL Input -->
+        <div id="url-input" class="input-group">
+            <input type="text" id="url-text" placeholder="Enter URL (e.g., https://example.com)">
+        </div>
+
+        <!-- Wi-Fi Inputs -->
+        <div id="wifi-input" class="input-group" style="display: none;">
+            <input type="text" id="wifi-ssid" placeholder="Wi-Fi Name (SSID)">
+            <input type="text" id="wifi-password" placeholder="Password">
+            <select id="wifi-security">
+                <option value="WPA">WPA/WPA2</option>
+                <option value="WEP">WEP</option>
+                <option value="nopass">No Password</option>
+            </select>
+        </div>
+
+        <button onclick="generateQR()">Generate QR Code</button>
+        <div id="qr-code"></div>
+        <button id="download-btn" style="display: none;" onclick="downloadQR()">Download QR Code</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.0/build/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
